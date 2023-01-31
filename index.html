@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script src="app.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <form action="" onsubmit="searchPokemon(event)">
+      <input type="text" name="pokemon" autocomplete="off" />
+    </form>
+    <div data-poke-card class="poke-card">
+      <div data-poke-name>Pokedex</div>
+      <div data-poke-img-contaner class="img-container">
+        <img data-poke-img src="./poke-shadow.png" alt="" class="poke-img"/>
+      </div>
+      <div data-poke-id></div>
+      <div data-poke-types class="poke-types"></div>
+      <div data-poke-stats class="poke-stats"></div>
+			<button class="random-btn">¡Random!</button>
+    </div>
+
+  </body>
+</html>
